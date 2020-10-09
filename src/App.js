@@ -37,7 +37,7 @@ class App extends React.Component {
 
         req.headers({
         	"x-rapidapi-host": "call-of-duty-modern-warfare.p.rapidapi.com",
-        	"x-rapidapi-key": "",
+        	"x-rapidapi-key": "f2ed33bb09msh3f284a89a7c6f42p1d2d71jsn9c6d1a5f2175",
         	"useQueryString": true
         });
 
@@ -71,14 +71,18 @@ class App extends React.Component {
             <>
                 <header className="header">
                     <div className="header-container container">
-                        <form onSubmit={ this.searchStats }>
-                            <input name="gamertag" className={ this.state.error ? 'error' : null } placeholder="Gamertag" />
-                            <select name="platform">
-                                <option value="xbl">Xbox</option>
-                                <option value="battle">PC (Master Race)</option>
-                                <option value="psn">PSN (smh)</option>
-                            </select>
-                            <button>Submit</button>
+                        <form onSubmit={ this.searchStats } className="row">
+                            <div className="columns five search">
+                                <input name="gamertag" className={ this.state.error ? 'error' : null } placeholder="Gamertag" />
+                                <select name="platform">
+                                    <option value="xbl">Xbox</option>
+                                    <option value="battle">PC (Master Race)</option>
+                                    <option value="psn">PSN (smh)</option>
+                                </select>
+                            </div>
+                            <div className="columns seven submit-button">
+                                <button>Submit</button>
+                            </div>
                         </form>
                     </div>
                 </header>
