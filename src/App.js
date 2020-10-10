@@ -37,7 +37,7 @@ class App extends React.Component {
 
         req.headers({
         	"x-rapidapi-host": "call-of-duty-modern-warfare.p.rapidapi.com",
-        	"x-rapidapi-key": "f2ed33bb09msh3f284a89a7c6f42p1d2d71jsn9c6d1a5f2175",
+        	"x-rapidapi-key": "nope",
         	"useQueryString": true
         });
 
